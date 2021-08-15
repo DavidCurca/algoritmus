@@ -1,0 +1,198 @@
+body {
+  background-color: #3F84E5;
+  margin: 0;
+  display:  grid;
+  font-family: Roboto,Monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+button{
+  font-family: Roboto, Monospace;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #eee;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+.black {
+  color: black;
+}
+
+.top-ad {
+  margin: 0;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.left-ad {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.right-ad {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.bottom-ad {
+  margin: 0;
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%; left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+table{
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #ddd;
+}
+
+table, td {
+  margin: 0;
+  font-size: 1em;
+  font-family: monospace;
+  line-height: 1.5em;
+  vertical-align: top;
+  padding: .5em;
+  white-space: nowrap;
+}
+table td, table th {
+  border: 1px solid #aaa;
+  padding-left: .5ex;
+  padding-right: .5ex;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#root{
+  height: 100vh;
+}
+
+p,h2,hr,a,u,input {
+  font-family: Roboto,Monospace;
+  font-weight: 5;
+  color: black;
+  margin: 0;
+}
+
+.code {
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+.CodeMirror {
+  margin-left: 10px !important;
+  height: 600px !important;
+  width: 700px !important;
+}
+
+ .CodeMirror {
+  box-sizing: border-box;
+  margin: 0;
+  font: inherit;
+  overflow: auto;
+  font-family: inherit;
+  display: inline-block;
+  width: 300px;
+  height: 300px;;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075); 
+  box-shadow: none;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  font-family: monospace;
+  position: relative;
+  overflow: hidden;
+  margin-top: 15px;
+}
+    
+.CodeMirror-focused {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+} 

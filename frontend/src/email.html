@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <style type="text/css">
+        body,button,p,h2,input{
+            font-family: "Roboto Mono", monospace; 
+        } 
+        p,h2{ 
+            margin: 0; font-weight: 1; 
+        } 
+        #roman{ 
+            font-family: "Times New Roman", serif 
+        }
+        </style>
+    </head>
+    <body>
+        <div id="navbar" style="background-color: #ddd; width: 100%; height: auto;">
+        <center style="font-size: 55px;" id="roman">
+            <p style="display: inline-block; color: #3F84E5">OIM</p style="display: inline-block;">C<p></p>
+        </center>
+        </div>
+        <h2 style="margin-top: 5px;">Resetarea Parolei</h2>
+        <p style="margin-top: 10px;">Salut <b style="font-weight: 700;">[ username ] </b>!</p>
+        <p>Am primit o cerere de a reseta parola</p>
+        <p>Pentru a va schimba parola apasati pe butonul urmator</p>
+        <center style="margin-top: 20px;">
+        <form action="http://localhost:3000/verify/` + token + `">
+            <input style="font-size: 20px; padding-top: 10px; padding-bottom: 10px; left: 10px; position: absolute; margin-top: -10px;" type="submit" value="SCHIMBA PAROLA" />
+        </form>
+        </center>
+    </body>
+</html>
